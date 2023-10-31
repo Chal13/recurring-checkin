@@ -1,0 +1,28 @@
+#!desc=阿里云盘定时签到
+#!homepage=https://yfamily.vercel.app
+#!author=lowking
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/aliyun.png
+name: aliyunpanqiandao
+desc: 阿里云盘定时签到
+
+cron:
+  script:
+    - name: aliyunpanqiandao1
+      cron: '0 8 * * *' # at 8:00
+ 
+http:
+  mitm:
+    - "auth.aliyundrive.com"
+  script:
+    - match: https:\/\/auth.aliyundrive.com\/v2\/account\/token
+      name: aliyunpanqiandao1
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  aliyunpanqiandao1:
+    url: https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
+    interval: 86400
+  aliyunpanqiandao2:
+    url: https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
+    interval: 86400
