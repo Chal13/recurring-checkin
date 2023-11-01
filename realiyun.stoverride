@@ -1,5 +1,4 @@
 #!desc=阿里云盘定时签到
-#!homepage=https://yfamily.vercel.app
 #!author=lowking
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/aliyun.png
 name: daily checkin
