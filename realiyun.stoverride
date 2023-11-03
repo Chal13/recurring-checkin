@@ -16,7 +16,7 @@ http:
 cron:
   script:
     - name: aliyunpanqiandao1
-      cron: '0 1 * * *'
+      cron: '0 8 * * *'  #execute at 8am everyday
       timeout: 60
 
 script-providers:
