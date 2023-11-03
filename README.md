@@ -1,2 +1,2 @@
 # recurring-checkin
-recurring checkin for Stash overide
+recurring Aliyun disk(阿里云盘) checkin for Stash overide
